@@ -8,9 +8,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@RequestMapping("message")
 public class FirstController {
 
-	@GetMapping("/message")
+	@GetMapping
 	public Map<String, String> getResult() {
 		return new HashMap<>(){{
 			put("test", "test");
