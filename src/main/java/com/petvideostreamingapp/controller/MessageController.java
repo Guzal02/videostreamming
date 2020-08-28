@@ -35,6 +35,7 @@ public class MessageController {
 		}});
 	}};
 
+
 	@GetMapping
 	public List<Map<String, String>> list() {
 		return messages;
